@@ -24,10 +24,11 @@
 		{
 			echo "<div class='media'>";
 				echo "<div class='media-left'>";
-					echo "<img class=\"media-object\" src=\"".$produit['IMAGE']."\">";
+					echo "<a href=\"".$produit['IMAGE']."\" target=\"_blank\"><img class=\"media-object\" height=\"auto\" width=\"600\" src=\"".$produit['IMAGE']."\"></a>";
 				echo "</div>";
 				echo "<div class='media-body'>";
 					echo "<h4 class='media-heading'>".$produit['REFERENCE']."</h4>";
+					echo "<i>Cliquez sur l'image pour l'agrandir</i><br>";
 					if (isset($produit['DESC_PROD']))
 					{
 						echo $produit['DESC_PROD'];
